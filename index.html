@@ -13,7 +13,7 @@
             <div class="annual-income-wrapper">
                 <div class="annual-income">
                     <p>Enter gross annual income   <i class="fa-regular fa-circle-question"></i></p>
-                    <input oninput="grossAnnualIncome()" id="gross-annual-income-input" type="text" placeholder="gross annual income">
+                    <input class="inputs" oninput="grossAnnualIncome()" id="gross-annual-income-input" type="text" placeholder="gross annual income">
                    
                 </div>
                 
@@ -22,7 +22,7 @@
             <div class="extra-income-wrapper">
                 <div class="extra-income">
                     <p>Enter extra income   <i class="fa-regular fa-circle-question"></i></p>
-                    <input oninput="extraAnnualIncome()" id="extra-annual-income-input" type="text" placeholder="gross annual income">
+                    <input  class="inputs" oninput="extraAnnualIncome()" id="extra-annual-income-input" type="text" placeholder="gross annual income">
                 </div>
                 
             </div>
@@ -31,7 +31,7 @@
             <div class="age-group-wrapper">
                 <div class="age-group">
                     <p>Enter age group   <i class="fa-regular fa-circle-question"></i></p>
-                    <select onchange="ageGroup()" title="age group" name="age" id="age-group">
+                    <select class="inputs" onchange="ageGroup()" title="age group" name="age" id="age-group">
                         <option value="young"> <40 </option>
                         <option value="semi"> >=40 and <60 </option>
                         <option value="old"> >=60 </option>
@@ -43,14 +43,14 @@
             <div class="total-applicable-deductions-wrapper">
                 <div class="total-applicable-deductions">
                     <p>total applicable deductions   <i class="fa-regular fa-circle-question"></i></p>
-                    <input oninput="totalApplicableDeductions()"  id="total-applicable-deductions"  type="text" placeholder="total applicable deductions">
+                    <input class="inputs" oninput="totalApplicableDeductions()"  id="total-applicable-deductions"  type="text" placeholder="total applicable deductions">
                 </div>
                 
             </div>
 
             <div class="button-wrapper">
                 <div class="submit-button">
-                      <button onclick="submit()" id="submit" class="submit">submit</button>
+                      <button   class="button-9" role="button" onclick="submit()" id="submit" class="submit">submit</button>
                 </div>
             </div>
 
@@ -60,7 +60,7 @@
             <div class="result-content">
                 <div id="result"></div>
                 <br>
-                <button onclick="closeResult()">Close</button>
+                <button   onclick="closeResult()">Close</button>
             </div>
         </div>
 
@@ -70,3 +70,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+

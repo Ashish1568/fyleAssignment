@@ -54,7 +54,7 @@ function extraAnnualIncome(){
         if (errorIcon) {
             errorIcon.style.display = 'none';
         }
-        grossIncome = parseFloat(exInc.value);
+        extraIncome = parseFloat(exInc.value);
     }
     
   
@@ -88,7 +88,7 @@ function totalApplicableDeductions(){
         if (errorIcon) {
             errorIcon.style.display = 'none';
         }
-        grossIncome = parseFloat(exInc.value);
+        totalDeductions = parseFloat(totDed.value);
     }
     
     

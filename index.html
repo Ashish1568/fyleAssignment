@@ -13,7 +13,8 @@
             <div class="annual-income-wrapper">
                 <div class="annual-income">
                     <p>Enter gross annual income   <i class="fa-regular fa-circle-question"></i></p>
-                    <input oninput="grossAnnualIncome()" id="gross-annual-income-input" type="number" placeholder="gross annual income">
+                    <input oninput="grossAnnualIncome()" id="gross-annual-income-input" type="text" placeholder="gross annual income">
+                   
                 </div>
                 
             </div>
@@ -21,7 +22,7 @@
             <div class="extra-income-wrapper">
                 <div class="extra-income">
                     <p>Enter extra income   <i class="fa-regular fa-circle-question"></i></p>
-                    <input oninput="extraAnnualIncome()" id="extra-annual-income-input" type="number" placeholder="gross annual income">
+                    <input oninput="extraAnnualIncome()" id="extra-annual-income-input" type="text" placeholder="gross annual income">
                 </div>
                 
             </div>
@@ -42,7 +43,7 @@
             <div class="total-applicable-deductions-wrapper">
                 <div class="total-applicable-deductions">
                     <p>total applicable deductions   <i class="fa-regular fa-circle-question"></i></p>
-                    <input oninput="totalApplicableDeductions()"  id="total-applicable-deductions"  type="number" placeholder="total applicable deductions">
+                    <input oninput="totalApplicableDeductions()"  id="total-applicable-deductions"  type="text" placeholder="total applicable deductions">
                 </div>
                 
             </div>
@@ -57,7 +58,8 @@
 
         <div class="result-box" id="result-box">
             <div class="result-content">
-                <span id="result"></span>
+                <div id="result"></div>
+                <br>
                 <button onclick="closeResult()">Close</button>
             </div>
         </div>

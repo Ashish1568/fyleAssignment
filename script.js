@@ -1,16 +1,63 @@
 let grossIncome=0,extraIncome=0,totalDeductions=0;
 let ageGrp;
+function isValidInput(value) {
+    // Regular expression to check if the value is a valid float or integer
+    return /^[+-]?\d+(\.\d+)?$/.test(value);
+}
 
 function grossAnnualIncome(){
     const grInc = document.querySelector('#gross-annual-income-input');
-    grossIncome=parseFloat(grInc.value);
-    console.log(grossIncome);
+    let errorIcon = document.querySelector('#gross-annual-income-error');
+    // grossIncome=parseFloat(grInc.value);
+    // console.log(grossIncome);
+   
+    if (!isValidInput(grInc.value)) {
+        // If error icon doesn't exist, create it
+        if (!errorIcon) {
+            errorIcon = document.createElement('i');
+            errorIcon.className = 'fas fa-exclamation-circle error-icon';
+            errorIcon.setAttribute('id', 'gross-annual-income-error');
+            const inputContainer = document.querySelector('.annual-income');
+            inputContainer.appendChild(errorIcon);
+        }
+        errorIcon.style.display = 'inline';
+    } else {
+        if (errorIcon) {
+            errorIcon.style.display = 'none';
+        }
+        grossIncome = parseFloat(grInc.value);
+    }
+    
+    
+    
+
 }
 
 function extraAnnualIncome(){
     const exInc = document.querySelector('#extra-annual-income-input');
-    extraIncome=parseFloat(exInc.value);
-    console.log(extraIncome);
+    let errorIcon = document.querySelector('#extra-annual-income-error');
+    // grossIncome=parseFloat(grInc.value);
+    // console.log(grossIncome);
+   
+    if (!isValidInput(exInc.value)) {
+        // If error icon doesn't exist, create it
+        if (!errorIcon) {
+            errorIcon = document.createElement('i');
+            errorIcon.className = 'fas fa-exclamation-circle error-icon';
+            errorIcon.setAttribute('id', 'extra-annual-income-error');
+            const inputContainer = document.querySelector('.extra-income');
+            inputContainer.appendChild(errorIcon);
+        }
+        errorIcon.style.display = 'inline';
+    }
+     else {
+        if (errorIcon) {
+            errorIcon.style.display = 'none';
+        }
+        grossIncome = parseFloat(exInc.value);
+    }
+    
+  
 }
 
 function ageGroup()
@@ -22,8 +69,29 @@ function ageGroup()
 
 function totalApplicableDeductions(){
     const totDed= document.querySelector('#total-applicable-deductions');
-     totalDeductions=parseFloat(totDed.value);
-    console.log(totalDeductions);
+    let errorIcon = document.querySelector('#total-applicable-deduction-error');
+    // grossIncome=parseFloat(grInc.value);
+    // console.log(grossIncome);
+   
+    if (!isValidInput(totDed.value)) {
+        // If error icon doesn't exist, create it
+        if (!errorIcon) {
+            errorIcon = document.createElement('i');
+            errorIcon.className = 'fas fa-exclamation-circle error-icon';
+            errorIcon.setAttribute('id', 'total-applicable-deduction-error');
+            const inputContainer = document.querySelector('.total-applicable-deductions');
+            inputContainer.appendChild(errorIcon);
+        }
+        errorIcon.style.display = 'inline';
+    }
+     else {
+        if (errorIcon) {
+            errorIcon.style.display = 'none';
+        }
+        grossIncome = parseFloat(exInc.value);
+    }
+    
+    
 }
 
 function submit()
@@ -60,7 +128,7 @@ function submit()
     }
 
     const resultElement = document.getElementById("result");
-    resultElement.textContent = "Final Income: " + ans;
+    resultElement.textContent = "Your overall Income after tax deductions will be: " + ans;
     showResult();
 
 

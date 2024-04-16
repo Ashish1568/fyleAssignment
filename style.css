@@ -1,0 +1,128 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing:border-box;
+  }
+
+.wrapper{
+  
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.box{
+    position: relative;
+    border: 1px solid black;
+    width: 500px;
+    padding: 20px;
+     /* height: 500px; */ 
+    /* display: flex;
+    flex-direction: column; 
+    */
+}
+
+.annual-income-wrapper{
+    width: 100%;
+    height: 50px;
+    margin-top: 10%;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .annual-income{
+    margin-top: 100px;
+    width: 100%;
+    height: 75px;
+    margin-left: 20% ;
+    border:1px solid black;
+    justify-content: center;
+} */
+
+
+.extra-income-wrapper{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.age-group-wrapper{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-applicable-deductions-wrapper{
+    width: 100%;
+    height: 50px;
+    margin-top: 10px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-wrapper{
+    width: 100%;
+    height: 50px;
+    margin-top: 50px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.submit{
+    width: 100px;
+    background: violet;
+    color: white;  
+}
+
+
+.result-box {
+    display: none; 
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 999;
+}
+
+.result-content {
+    text-align: center;
+}
+
+.result-content button {
+    background-color: violet;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.result-content button:hover {
+    background-color: purple;
+}
+
+
+
+
